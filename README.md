@@ -8,7 +8,7 @@ Checks reddit for various things (such as new messages)
 Required Packages
 ----------------
 
-* praw >= 2.x
+	praw >= 2.x
 
 ***
 
