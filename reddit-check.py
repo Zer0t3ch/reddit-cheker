@@ -15,9 +15,25 @@ creds = [ ]
 with open(auth_file, 'r') as fil:
 	for line in xrange(2):
 		creds[line] = fil[line].strip()
+	fil.close()
 r.login(creds[0], creds[1])
 
-# TODO: Add message checker command
 # TODO: Add unknown command output
 
-print("Not ready for use")
+####################################################
+####################################################
+
+commands = {
+	'unread' : get_unread
+}
+
+##########################
+
+def get_unread():
+	n = len(r.get_unread())
+	return "You have {0} unread messages".format(n)
+
+####################################################
+####################################################
+
+commands[com]()
