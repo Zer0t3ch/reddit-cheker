@@ -21,3 +21,4 @@ How to run
 	
 	Commands:
 		Coming soon
+		tests
