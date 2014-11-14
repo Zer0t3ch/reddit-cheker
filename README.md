@@ -18,6 +18,6 @@ How to run
 	reddit-check <command>
 	
 	Returns a plaintext response for the command
-	
+	test
 	Commands:
 		Coming soon
