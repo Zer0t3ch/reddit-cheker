@@ -9,6 +9,7 @@ Required Packages
 ----------------
 
 	praw >= 2.x
+	iniparse: current version
 
 ***
 
