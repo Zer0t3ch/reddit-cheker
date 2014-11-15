@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from iniparse import INIConfig as ini
 import traceback as tb
 import praw
 import sys
@@ -19,13 +20,9 @@ else:
 	sys.exit(1)
 
 
-auth_file = "./reddit-auth.creds"
-creds = [ ]
-with open(auth_file, 'r') as fil:
-	for l in fil:
-		creds.append(l.strip())
-	fil.close()
-r.login(creds[0], creds[1])
+auth_file = os.path.join(os.path.dirname(__file__), "auth.ini")
+creds = ini(open(auth_file))
+r.login(creds.reddit['username'], creds.reddit['password'])
 
 
 # TODO: Add unknown command output
