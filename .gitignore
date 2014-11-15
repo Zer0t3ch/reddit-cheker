@@ -54,3 +54,4 @@ docs/_build/
 target/
 
 auth.ini
+./auth.ini
