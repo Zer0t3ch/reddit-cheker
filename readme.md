@@ -21,5 +21,5 @@ How to run
 	Returns a plaintext response for the command
 
 	Commands:
-		Coming soon
+		unread - Return a message of how many unread messages there are
 
